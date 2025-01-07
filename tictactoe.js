@@ -20,8 +20,8 @@ function validGames() {
             return;
         }
         
-        for (let i = 0; i < matrix.length; i++) {
-            for (let j = 0; j < matrix[0].length; j++) {
+        for (let i = 0; i < currentMatrix.length; i++) {
+            for (let j = 0; j < currentMatrix[0].length; j++) {
                 if (currentMatrix[i][j] === null) {
                     currentMatrix[i][j] = isX ? 'X' : 'O';
                     dfs(currentMatrix, !isX);
